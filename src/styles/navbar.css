@@ -1,0 +1,206 @@
+/* src/components/Navbar.css */
+.navbar {
+    display: flex;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    z-index: 100;
+    /* align-items: center; */
+      height: 80px;
+     padding: 0 0 20px 20px;
+      
+    justify-content: space-between;
+   
+    background-color: #D1D4FF;
+   
+  }
+  .mobile-nav{
+    display: none;
+  }
+
+.open-nav-mobile,.mobile-nav-container{
+  display: none;
+}
+  
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-logo img {
+    width: 30px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  .navbar-logo span {
+   font-weight:900 ;
+   font-size: 28px;
+   color: #1B1B1B;
+  }
+  .navbar-links {
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5rem;
+   
+  }
+  
+  .navbar-links a {
+    color: #1B1B1B;
+    font-weight: 400;
+    font-size: 16px;
+    
+    text-decoration: none;
+  }
+  .navbar-links .active{
+        font-weight: 700;
+  }
+  .navbar-auth {
+  height: 80px;  
+    display: flex;
+    padding: 0 50px 0 10px;
+    background-color: black;
+    align-items: center;
+    gap: 1rem;
+  }
+  .navbar-auth .login-btn{
+    border: 2px solid white;
+    border-radius: 5px;
+    box-shadow: none;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+  }
+  .navbar-auth .signin-btn{
+    border: none;
+    border-radius: 5px;
+    box-shadow: none;
+    background-color: #6427FF;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+  }
+  .navbar-auth a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navbar-hamburger {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .hamburger-icon {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+  }
+  
+  
+  @media (max-width: 920px) {
+   .navbar{
+    display: none;
+   }
+
+   .mobile-nav{
+    display: flex;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    z-index: 100;
+    /* align-items: center; */
+      /* height: 80px; */
+     padding: 0 0px 20px 20px;
+      
+    justify-content: space-between;
+   
+    background-color: #D1D4FF;
+   }
+   .mobile-action{
+    display: flex;
+    gap: 1rem;
+   }
+   .mobile-auth{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+   }
+   .mobile-auth img{
+          width: 20px;
+          height: 20px;
+      
+   }
+   .mobile-auth p{
+    color:  #6427FF;
+    font-weight: 600;
+   }
+   .hamburger-menu-mobile{
+    cursor: pointer;
+    background-color: black;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    width: 60px;
+    height: 100%;
+    flex-direction: column;
+    gap: 0.4rem;
+    justify-content: center;
+    align-items: center;
+   }
+   .ham-icon{
+    width: 20px;
+    height: 2px;
+    background-color: white;
+   }
+   .mobile-nav-container{
+    display: none;
+   }
+   .open-nav-mobile{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh; 
+    background-color: #D1D4FF;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: end;
+    gap: 5rem;
+    overflow: hidden; 
+    z-index: 200; 
+    
+   }
+   
+   .navbar-links-mobile{
+    display: flex;
+    
+    flex-direction: column;
+    align-self: center;
+    gap: 3rem;
+   }
+   .navbar-links-mobile a{
+    color: black;
+   }
+   .navbar-links-mobile a:hover{
+    font-weight: 900;
+
+
+   }
+
+   .cancel-btn{
+    background-color: black;
+    padding: 10px 20px;
+    z-index: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 10px;
+    color: white;
+    font-weight: 500;
+    font-size: 1.5rem;
+   }
+  }
+  
